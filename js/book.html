@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK Details</title>
+    <link rel="stylesheet" href="book.css" type="text/css">
+</head>
+<body>
+    <div class="heading">
+        <h2>LIBRARY PORTAL</h2>
+    </div>
+<div class="parent">
+    <div class="container">
+    <div class="Display-category">
+        <span class="display-label"><strong>Category</strong></span>
+        <span class="display-values" id="categoryDisplay">
+            <script>
+                document.getElementById('categoryDisplay').textContent=localStorage.getItem("category");
+            </script>
+        </span>
+    </div>
+
+    <div class="Display-category">
+    <span class="display-label"><strong>Book Name</strong></span>
+    <span class="display-values" id="bookDisplay"></span>
+    <script>
+        document.getElementById('bookDisplay').textContent=localStorage.getItem("bookname");
+    </script>
+    </div>
+    <div class="Display-category">
+        <span class="display-label"><strong>Author Email</strong></span>
+        <span class="display-values" id="authorEmailDisplay"></span>
+        <script>
+            document.getElementById('authorEmailDisplay').textContent=localStorage.getItem("mail");
+        </script>
+    </div>
+    <div class="Display-category">
+        <span class="display-label"><strong>Author Name</strong></span>
+        <span class="display-values" id="authorNameDisplay"></span>
+        <script>
+            document.getElementById('authorNameDisplay').textContent=localStorage.getItem("name");
+        </script>
+    </div>
+    <div class="Display-category">
+        <span class="display-label"><strong>Published Date</strong></span>
+        <span class="display-values" id="publishedDisplay"></span>
+        <script>
+            document.getElementById('publishedDisplay').textContent=localStorage.getItem("published");
+        </script>
+    </div>
+    <div class="Display-category">
+        <span class="display-label"><strong>Price</strong></span>
+        <span class="display-values" id="priceDisplay"></span>
+        <script>
+            document.getElementById('priceDisplay').textContent=localStorage.getItem("price");
+        </script>
+    </div>
+</div>
+</div>
+</body>
+</html>
